@@ -1,6 +1,6 @@
 cask "notifdex" do
-  version "0.1.2"
-  sha256 "0c8bae58bf8fc4733478d5c8b54c689e939c754186cc477f702c2943aad4fec1"
+  version "0.1.3"
+  sha256 "64d55e9109340116c2e8de25bb2da95903a7ea76d89add7779ccad473303378a"
 
   url "https://github.com/notifdex/notifdex/releases/download/v#{version}/Notifdex-#{version}-macOS-universal.zip"
   name "Notifdex"
