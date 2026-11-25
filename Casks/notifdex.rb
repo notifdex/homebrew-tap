@@ -1,13 +1,13 @@
 cask "notifdex" do
-  version "0.1.0"
-  sha256 "c4429e25ec33a486c13e86027bcb5d0dcb0081ab9dcf809d5c4a2296f0961119"
+  version "0.1.1"
+  sha256 "83c75d5094647dc105e5200c73045ebd84b83b9150b85bcc418395fbc1d1251b"
 
   url "https://github.com/notifdex/notifdex/releases/download/v#{version}/Notifdex-#{version}-macOS-universal.zip"
   name "Notifdex"
   desc "Local macOS notification inbox and people notebook"
   homepage "https://notifdex.com/"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Notifdex.app"
 
