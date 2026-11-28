@@ -1,6 +1,6 @@
 cask "notifdex" do
-  version "0.2.0"
-  sha256 "9da0d14a7bc8473b80b440fdf1287322a0e871905a08fe4285983e60a4dfadae"
+  version "0.2.1"
+  sha256 "e80297ed9432440ab4810443e814cbfced17d7df1c4e1b87f2f47edbc4af88aa"
 
   url "https://github.com/notifdex/notifdex/releases/download/v#{version}/Notifdex-#{version}-macOS-universal.zip"
   name "Notifdex"
@@ -19,8 +19,12 @@ cask "notifdex" do
   ]
 
   caveats <<~EOS
-    Open Notifdex from Applications, click the menu bar icon, and grant
-    Accessibility access in System Settings -> Privacy & Security -> Accessibility.
+    Open Notifdex from Applications or Spotlight to launch App Center (or use the
+    menu bar icon anytime) and grant Accessibility access in:
+    System Settings -> Privacy & Security -> Accessibility.
+
+    Closing App Center keeps notification capture running in the background; click
+    the Dock icon or press Cmd-Q to reopen or quit.
 
     For forwarded iPhone notifications, macOS 15 (Sequoia) and iOS 18 or later
     are required with iPhone Mirroring paired and "Allow notifications from iPhone"
